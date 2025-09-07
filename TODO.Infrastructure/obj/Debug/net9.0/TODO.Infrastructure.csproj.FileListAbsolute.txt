@@ -1,0 +1,15 @@
+C:\Users\Sasha\Desktop\TODO\TODO.Infrastructure\obj\Debug\net9.0\TODO.Infrastructure.csproj.AssemblyReference.cache
+C:\Users\Sasha\Desktop\TODO\TODO.Infrastructure\obj\Debug\net9.0\TODO.Infrastructure.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Sasha\Desktop\TODO\TODO.Infrastructure\obj\Debug\net9.0\TODO.Infrastructure.AssemblyInfoInputs.cache
+C:\Users\Sasha\Desktop\TODO\TODO.Infrastructure\obj\Debug\net9.0\TODO.Infrastructure.AssemblyInfo.cs
+C:\Users\Sasha\Desktop\TODO\TODO.Infrastructure\obj\Debug\net9.0\TODO.Infrastructure.csproj.CoreCompileInputs.cache
+C:\Users\Sasha\Desktop\TODO\TODO.Infrastructure\bin\Debug\net9.0\TODO.Infrastructure.deps.json
+C:\Users\Sasha\Desktop\TODO\TODO.Infrastructure\bin\Debug\net9.0\TODO.Infrastructure.dll
+C:\Users\Sasha\Desktop\TODO\TODO.Infrastructure\bin\Debug\net9.0\TODO.Infrastructure.pdb
+C:\Users\Sasha\Desktop\TODO\TODO.Infrastructure\bin\Debug\net9.0\TODO.Core.dll
+C:\Users\Sasha\Desktop\TODO\TODO.Infrastructure\bin\Debug\net9.0\TODO.Core.pdb
+C:\Users\Sasha\Desktop\TODO\TODO.Infrastructure\obj\Debug\net9.0\TODO.Inf.D20F3864.Up2Date
+C:\Users\Sasha\Desktop\TODO\TODO.Infrastructure\obj\Debug\net9.0\TODO.Infrastructure.dll
+C:\Users\Sasha\Desktop\TODO\TODO.Infrastructure\obj\Debug\net9.0\refint\TODO.Infrastructure.dll
+C:\Users\Sasha\Desktop\TODO\TODO.Infrastructure\obj\Debug\net9.0\TODO.Infrastructure.pdb
+C:\Users\Sasha\Desktop\TODO\TODO.Infrastructure\obj\Debug\net9.0\ref\TODO.Infrastructure.dll

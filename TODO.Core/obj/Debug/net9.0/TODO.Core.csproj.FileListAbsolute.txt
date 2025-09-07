@@ -1,0 +1,11 @@
+C:\Users\Sasha\Desktop\TODO\TODO.Core\bin\Debug\net9.0\TODO.Core.deps.json
+C:\Users\Sasha\Desktop\TODO\TODO.Core\bin\Debug\net9.0\TODO.Core.dll
+C:\Users\Sasha\Desktop\TODO\TODO.Core\bin\Debug\net9.0\TODO.Core.pdb
+C:\Users\Sasha\Desktop\TODO\TODO.Core\obj\Debug\net9.0\TODO.Core.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Sasha\Desktop\TODO\TODO.Core\obj\Debug\net9.0\TODO.Core.AssemblyInfoInputs.cache
+C:\Users\Sasha\Desktop\TODO\TODO.Core\obj\Debug\net9.0\TODO.Core.AssemblyInfo.cs
+C:\Users\Sasha\Desktop\TODO\TODO.Core\obj\Debug\net9.0\TODO.Core.csproj.CoreCompileInputs.cache
+C:\Users\Sasha\Desktop\TODO\TODO.Core\obj\Debug\net9.0\TODO.Core.dll
+C:\Users\Sasha\Desktop\TODO\TODO.Core\obj\Debug\net9.0\refint\TODO.Core.dll
+C:\Users\Sasha\Desktop\TODO\TODO.Core\obj\Debug\net9.0\TODO.Core.pdb
+C:\Users\Sasha\Desktop\TODO\TODO.Core\obj\Debug\net9.0\ref\TODO.Core.dll

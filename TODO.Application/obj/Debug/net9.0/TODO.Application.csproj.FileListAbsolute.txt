@@ -1,0 +1,17 @@
+C:\Users\Sasha\Desktop\TODO\TODO.Application\bin\Debug\net9.0\TODO.Application.deps.json
+C:\Users\Sasha\Desktop\TODO\TODO.Application\bin\Debug\net9.0\TODO.Application.dll
+C:\Users\Sasha\Desktop\TODO\TODO.Application\bin\Debug\net9.0\TODO.Application.pdb
+C:\Users\Sasha\Desktop\TODO\TODO.Application\bin\Debug\net9.0\TODO.Core.dll
+C:\Users\Sasha\Desktop\TODO\TODO.Application\bin\Debug\net9.0\TODO.Infrastructure.dll
+C:\Users\Sasha\Desktop\TODO\TODO.Application\bin\Debug\net9.0\TODO.Core.pdb
+C:\Users\Sasha\Desktop\TODO\TODO.Application\bin\Debug\net9.0\TODO.Infrastructure.pdb
+C:\Users\Sasha\Desktop\TODO\TODO.Application\obj\Debug\net9.0\TODO.Application.csproj.AssemblyReference.cache
+C:\Users\Sasha\Desktop\TODO\TODO.Application\obj\Debug\net9.0\TODO.Application.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Sasha\Desktop\TODO\TODO.Application\obj\Debug\net9.0\TODO.Application.AssemblyInfoInputs.cache
+C:\Users\Sasha\Desktop\TODO\TODO.Application\obj\Debug\net9.0\TODO.Application.AssemblyInfo.cs
+C:\Users\Sasha\Desktop\TODO\TODO.Application\obj\Debug\net9.0\TODO.Application.csproj.CoreCompileInputs.cache
+C:\Users\Sasha\Desktop\TODO\TODO.Application\obj\Debug\net9.0\TODO.App.0545A8C9.Up2Date
+C:\Users\Sasha\Desktop\TODO\TODO.Application\obj\Debug\net9.0\TODO.Application.dll
+C:\Users\Sasha\Desktop\TODO\TODO.Application\obj\Debug\net9.0\refint\TODO.Application.dll
+C:\Users\Sasha\Desktop\TODO\TODO.Application\obj\Debug\net9.0\TODO.Application.pdb
+C:\Users\Sasha\Desktop\TODO\TODO.Application\obj\Debug\net9.0\ref\TODO.Application.dll
