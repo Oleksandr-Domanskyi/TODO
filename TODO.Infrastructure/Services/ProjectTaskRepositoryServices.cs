@@ -5,6 +5,7 @@ using System.Threading.Tasks;
 using FluentResults;
 using TODO.Core.Dto;
 using TODO.Core.Dto.ProjectTask;
+using TODO.Core.Enums;
 using TODO.Infrastructure.Mappers;
 using TODO.Infrastructure.Repositories.IRepositories;
 using TODO.Infrastructure.Services.IServices;
@@ -35,14 +36,14 @@ namespace TODO.Infrastructure.Services
             => await Result.Try(async Task<IEnumerable<ProjectTaskDTO>> () => await GetAllProjectTasksAsync());
         public async Task<Result<ProjectTaskDTO>> GetProjectTaskById(Guid id)
             => await Result.Try(async Task<ProjectTaskDTO> () => await GetProjectTaskByIdAsync(id));
-        public async Task<Result<IEnumerable<ProjectTaskDTO>>> GetIncomingProjectTaskAsync()
-            => await Result.Try(async Task<IEnumerable<ProjectTaskDTO>> () => await GetIncomingAsync());
+        public async Task<Result<IEnumerable<ProjectTaskDTO>>> GetIncomingProjectTaskAsync(TaskPeriod period)
+            => await Result.Try(async Task<IEnumerable<ProjectTaskDTO>> () => await GetIncomingAsync(period));
         public async Task<Result<ProjectTaskDTO>> UpdateProjectTask(Guid id, ProjectTaskUpdateDTO dto)
             => await Result.Try(async Task<ProjectTaskDTO> () => await UpdateProjectTaskAsync(id, dto));
         public async Task<Result<ProjectTaskDTO>> SetAsComplatePercentComplete(Guid id)
             => await Result.Try(async Task<ProjectTaskDTO> () => await SetPercentCompleteAsync(id));
-        public async Task<Result<ProjectTaskDTO>> MarkDone(Guid id)
-            => await Result.Try(async Task<ProjectTaskDTO> () => await MarkDoneAsync(id));
+        public async Task<Result> UpdateTotalProgress(Guid id)
+            => await Result.Try(async Task () => await MarkDoneAsync(id));
 
 
 
@@ -72,9 +73,9 @@ namespace TODO.Infrastructure.Services
 
             return ProjectTaskMapper.MapEntityToDto(entity);
         }
-        private async Task<IEnumerable<ProjectTaskDTO>> GetIncomingAsync()
+        private async Task<IEnumerable<ProjectTaskDTO>> GetIncomingAsync(TaskPeriod period)
         {
-            var entities = await _repository.GetIncomingAsync();
+            var entities = await _repository.GetIncomingAsync(period);
             return ProjectTaskMapper.MapEntitiesToDtos(entities);
         }
 
@@ -97,15 +98,15 @@ namespace TODO.Infrastructure.Services
             return ProjectTaskMapper.MapEntityToDto(updated!);
         }
 
-        private async Task<ProjectTaskDTO> MarkDoneAsync(Guid id)
+        private async Task MarkDoneAsync(Guid id)
         {
             var entity = await _repository.GetByIdAsync(id);
             if (entity == null)
                 throw new ArgumentNullException(nameof(entity), $"ProjectTask with Id={id} not found");
 
             entity.TotalProgress = entity.GetTotalProgress();
-            var updated = await _repository.UpdateAsync(entity);
-            return ProjectTaskMapper.MapEntityToDto(updated!);
+            await _repository.UpdateAsync(entity);
         }
+
     }
 }

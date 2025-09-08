@@ -10,6 +10,7 @@ C:\Users\Sasha\Desktop\TODO\TODO.Application\obj\Debug\net9.0\TODO.Application.G
 C:\Users\Sasha\Desktop\TODO\TODO.Application\obj\Debug\net9.0\TODO.Application.AssemblyInfoInputs.cache
 C:\Users\Sasha\Desktop\TODO\TODO.Application\obj\Debug\net9.0\TODO.Application.AssemblyInfo.cs
 C:\Users\Sasha\Desktop\TODO\TODO.Application\obj\Debug\net9.0\TODO.Application.csproj.CoreCompileInputs.cache
+C:\Users\Sasha\Desktop\TODO\TODO.Application\obj\Debug\net9.0\TODO.Application.sourcelink.json
 C:\Users\Sasha\Desktop\TODO\TODO.Application\obj\Debug\net9.0\TODO.App.0545A8C9.Up2Date
 C:\Users\Sasha\Desktop\TODO\TODO.Application\obj\Debug\net9.0\TODO.Application.dll
 C:\Users\Sasha\Desktop\TODO\TODO.Application\obj\Debug\net9.0\refint\TODO.Application.dll

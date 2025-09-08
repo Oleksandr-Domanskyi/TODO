@@ -17,7 +17,7 @@ namespace TODO.Application.CQRS.Queries.GetIncomingProjectTask
         }
         public async Task<IEnumerable<ProjectTaskDTO>> Handle(GetIncomingProjectTaskQuery request, CancellationToken cancellationToken)
         {
-            var model = await _projectTaskRepositoryServices.GetIncomingProjectTaskAsync();
+            var model = await _projectTaskRepositoryServices.GetIncomingProjectTaskAsync(request.Period);
             if (model.IsSuccess)
                 return model.Value;
             throw new Exception(string.Join(", ", model.Errors.Select(e => e.Message)));

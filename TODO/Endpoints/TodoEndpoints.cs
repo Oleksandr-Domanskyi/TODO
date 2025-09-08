@@ -8,6 +8,7 @@ using TODO.Application.CQRS.Commands.ProjectTaskUpdate;
 using TODO.Application.CQRS.Commands.SetProjectTaskPercent;
 using TODO.Core.Dto.ProjectTask;
 using TODO.Application.CQRS.Commands.DeleteProjectTask;
+using TODO.Core.Enums;
 
 namespace TODO.Endpoints;
 
@@ -27,9 +28,9 @@ public static class ProjectTaskEndpoints
             return todo is null ? Results.NotFound() : Results.Ok(todo);
         });
 
-        app.MapGet("/ProjectTask/Incoming", async (IMediator mediator) =>
+        app.MapGet("/ProjectTask/Incoming", async (IMediator mediator, TaskPeriod period) =>
         {
-            var todos = await mediator.Send(new GetIncomingProjectTaskQuery());
+            var todos = await mediator.Send(new GetIncomingProjectTaskQuery(period));
             return Results.Ok(todos);
         });
 

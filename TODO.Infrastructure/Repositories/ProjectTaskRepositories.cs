@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Threading.Tasks;
 using Microsoft.EntityFrameworkCore;
 using TODO.Core.Entity;
+using TODO.Core.Enums;
 using TODO.Infrastructure.DataBase;
 using TODO.Infrastructure.Repositories.IRepositories;
 
@@ -30,15 +31,27 @@ namespace TODO.Infrastructur.Repositories
                 .Include(p => p.SubTasks)
                 .FirstOrDefaultAsync(p => p.Id == id);
 
-        public async Task<IEnumerable<ProjectTask>> GetIncomingAsync(DateTime? from = null, DateTime? to = null)
+        public async Task<IEnumerable<ProjectTask>> GetIncomingAsync(TaskPeriod period)
         {
-            from ??= DateTime.UtcNow.Date;
-            to ??= from.Value.AddDays(5);
+            var today = DateTime.UtcNow.Date;
+            IQueryable<ProjectTask> query = _dbContext.ProjectTasks.AsNoTracking();
 
-            return await _dbContext.ProjectTasks
-                .Include(p => p.SubTasks)
-                .Where(p => p.ExpiryDate >= from && p.ExpiryDate <= to)
-                .ToListAsync();
+            switch (period)
+            {
+                case TaskPeriod.Today:
+                    query = query.Where(s => s.ExpiryDate.Date == today);
+                    break;
+                case TaskPeriod.NextDay:
+                    query = query.Where(s => s.ExpiryDate.Date == today.AddDays(1));
+                    break;
+                case TaskPeriod.CurrentWeek:
+                    var startOfWeek = today.AddDays(-(int)today.DayOfWeek + (int)DayOfWeek.Monday);
+                    var endOfWeek = startOfWeek.AddDays(6);
+                    query = query.Where(s => s.ExpiryDate.Date >= startOfWeek && s.ExpiryDate.Date <= endOfWeek);
+                    break;
+            }
+
+            return await query.ToListAsync();
         }
 
         public async Task<ProjectTask> CreateAsync(ProjectTask projectTask)
@@ -59,17 +72,6 @@ namespace TODO.Infrastructur.Repositories
         }
 
         public async Task<bool> SetPercentCompleteAsync(Guid id)
-        {
-            var task = await _dbContext.ProjectTasks.FindAsync(id);
-            if (task == null) return false;
-
-            task.TotalProgress = 100;
-            _dbContext.ProjectTasks.Update(task);
-            await _dbContext.SaveChangesAsync();
-            return true;
-        }
-
-        public async Task<bool> MarkDoneAsync(Guid id)
         {
             var task = await _dbContext.ProjectTasks.FindAsync(id);
             if (task == null) return false;

@@ -46,6 +46,7 @@ namespace TODO.Infrastructure.Mappers
             };
         }
 
+
         public static IEnumerable<SubTaskDTO> MapEntitiesToDtos(IEnumerable<SubTask> entities)
             => entities.Select(MapEntityToDto);
 

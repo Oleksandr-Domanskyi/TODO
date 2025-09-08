@@ -5,6 +5,7 @@ C:\Users\Sasha\Desktop\TODO\TODO.Core\obj\Debug\net9.0\TODO.Core.GeneratedMSBuil
 C:\Users\Sasha\Desktop\TODO\TODO.Core\obj\Debug\net9.0\TODO.Core.AssemblyInfoInputs.cache
 C:\Users\Sasha\Desktop\TODO\TODO.Core\obj\Debug\net9.0\TODO.Core.AssemblyInfo.cs
 C:\Users\Sasha\Desktop\TODO\TODO.Core\obj\Debug\net9.0\TODO.Core.csproj.CoreCompileInputs.cache
+C:\Users\Sasha\Desktop\TODO\TODO.Core\obj\Debug\net9.0\TODO.Core.sourcelink.json
 C:\Users\Sasha\Desktop\TODO\TODO.Core\obj\Debug\net9.0\TODO.Core.dll
 C:\Users\Sasha\Desktop\TODO\TODO.Core\obj\Debug\net9.0\refint\TODO.Core.dll
 C:\Users\Sasha\Desktop\TODO\TODO.Core\obj\Debug\net9.0\TODO.Core.pdb

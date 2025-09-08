@@ -24,8 +24,6 @@ namespace TODO.Core.Entity
 
         public int GetTotalProgress()
         {
-            if (TotalProgress.HasValue)
-                return TotalProgress.Value;
 
             if (SubTasks == null || SubTasks.Count(s => s.IsActive) == 0)
                 return 0;

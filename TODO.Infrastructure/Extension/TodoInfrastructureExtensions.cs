@@ -4,6 +4,7 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using TODO.Infrastructur.Repositories;
 using TODO.Infrastructure.DataBase;
+using TODO.Infrastructure.Repositories;
 using TODO.Infrastructure.Repositories.IRepositories;
 using TODO.Infrastructure.Seeders;
 using TODO.Infrastructure.Services;
@@ -22,6 +23,8 @@ public static class TodoInfrastructureExtensions
         services.AddTransient<TODOSeed>();
         services.AddScoped<IProjectTaskRepository, ProjectTaskRepository>();
         services.AddScoped<IProjectTaskRepositoryServices, ProjectTaskRepositoryServices>();
+        services.AddScoped<ISubTaskRepository, SubTaskRepository>();
+        services.AddScoped<ISubTaskRepositoryServices, SubTaskRepositoryServices>();
     }
 
     public static async Task SeedDatabaseAsync(this IServiceProvider serviceProvider)

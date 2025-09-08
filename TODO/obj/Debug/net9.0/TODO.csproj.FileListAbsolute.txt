@@ -159,6 +159,7 @@ C:\Users\Sasha\Desktop\TODO\TODO\obj\Debug\net9.0\TODO.AssemblyInfo.cs
 C:\Users\Sasha\Desktop\TODO\TODO\obj\Debug\net9.0\TODO.csproj.CoreCompileInputs.cache
 C:\Users\Sasha\Desktop\TODO\TODO\obj\Debug\net9.0\TODO.MvcApplicationPartsAssemblyInfo.cs
 C:\Users\Sasha\Desktop\TODO\TODO\obj\Debug\net9.0\TODO.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\Sasha\Desktop\TODO\TODO\obj\Debug\net9.0\TODO.sourcelink.json
 C:\Users\Sasha\Desktop\TODO\TODO\obj\Debug\net9.0\rjimswa.dswa.cache.json
 C:\Users\Sasha\Desktop\TODO\TODO\obj\Debug\net9.0\rjsmrazor.dswa.cache.json
 C:\Users\Sasha\Desktop\TODO\TODO\obj\Debug\net9.0\rjsmcshtml.dswa.cache.json
@@ -173,3 +174,5 @@ C:\Users\Sasha\Desktop\TODO\TODO\obj\Debug\net9.0\refint\TODO.dll
 C:\Users\Sasha\Desktop\TODO\TODO\obj\Debug\net9.0\TODO.pdb
 C:\Users\Sasha\Desktop\TODO\TODO\obj\Debug\net9.0\TODO.genruntimeconfig.cache
 C:\Users\Sasha\Desktop\TODO\TODO\obj\Debug\net9.0\ref\TODO.dll
+C:\Users\Sasha\Desktop\TODO\TODO\bin\Debug\net9.0\FluentValidation.dll
+C:\Users\Sasha\Desktop\TODO\TODO\bin\Debug\net9.0\FluentValidation.DependencyInjectionExtensions.dll
